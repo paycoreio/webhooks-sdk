@@ -1,0 +1,14 @@
+{
+    "name": "paymaxi/webhooks-sdk",
+    "license": "MIT",
+    "type": "package",
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
