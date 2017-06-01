@@ -10,5 +10,10 @@
     },
     "require": {
         "guzzlehttp/guzzle": "^6.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
 }
