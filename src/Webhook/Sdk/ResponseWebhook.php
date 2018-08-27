@@ -18,7 +18,7 @@ class ResponseWebhook
     public $url;
 
     /** @var string */
-    public $status;
+    public $messageStatus;
 
     /** @var array|string */
     public $body;
@@ -55,6 +55,9 @@ class ResponseWebhook
 
     /** @var array */
     public $strategyOptions;
+
+    /** @var null|string */
+    public $messageReference;
 
     /**
      * ResponseMessage constructor.

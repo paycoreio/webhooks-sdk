@@ -41,6 +41,9 @@ class RequestWebhook implements \JsonSerializable
     /** @var  string */
     private $callbackUrl;
 
+    /** @var string */
+    private $messageReference;
+
     /**
      * Message constructor.
      *
@@ -176,4 +179,15 @@ class RequestWebhook implements \JsonSerializable
 
         return $this;
     }
+
+    /**
+     * @param string $reference
+     *
+     * @return RequestWebhook
+     */
+    public function setReference(string $reference): RequestWebhook
+    {
+        $this->messageReference = $reference;
+        return $this;
+}
 }
