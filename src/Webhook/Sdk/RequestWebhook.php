@@ -41,8 +41,11 @@ class RequestWebhook implements \JsonSerializable
     /** @var  string */
     private $callbackUrl;
 
-    /** @var string */
+    /** @var null|string */
     private $messageReference;
+
+    /** @var null|string */
+    private $organization;
 
     /**
      * Message constructor.
@@ -189,5 +192,16 @@ class RequestWebhook implements \JsonSerializable
     {
         $this->messageReference = $reference;
         return $this;
-}
+    }
+
+    /**
+     * @param string $organization
+     *
+     * @return RequestWebhook
+     */
+    public function setOrganization(string $organization): RequestWebhook
+    {
+        $this->organization = $organization;
+        return $this;
+    }
 }

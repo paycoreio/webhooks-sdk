@@ -59,6 +59,9 @@ class ResponseWebhook
     /** @var null|string */
     public $messageReference;
 
+    /** @var null|string */
+    public $organization;
+
     /**
      * ResponseMessage constructor.
      *
