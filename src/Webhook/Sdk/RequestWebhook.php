@@ -35,6 +35,9 @@ class RequestWebhook implements \JsonSerializable
     /** @var  string */
     private $userAgent;
 
+    /** @var array */
+    private $headers;
+
     /** @var  array */
     private $metadata;
 
@@ -141,6 +144,18 @@ class RequestWebhook implements \JsonSerializable
     public function setUserAgent(string $userAgent)
     {
         $this->userAgent = $userAgent;
+
+        return $this;
+    }
+
+    /**
+     * @param array $headers
+     *
+     * @return $this
+     */
+    public function setHeaders(array $headers)
+    {
+        $this->headers = $headers;
 
         return $this;
     }
