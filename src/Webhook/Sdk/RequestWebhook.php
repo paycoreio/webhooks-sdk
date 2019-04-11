@@ -50,6 +50,9 @@ class RequestWebhook implements \JsonSerializable
     /** @var null|string */
     private $organization;
 
+    /** @var null|string */
+    private $commerce;
+
     /**
      * Message constructor.
      *
@@ -217,6 +220,17 @@ class RequestWebhook implements \JsonSerializable
     public function setOrganization(string $organization): RequestWebhook
     {
         $this->organization = $organization;
+        return $this;
+    }
+
+    /**
+     * @param string $commerce
+     *
+     * @return RequestWebhook
+     */
+    public function setCommerce(string $commerce): RequestWebhook
+    {
+        $this->commerce = $commerce;
         return $this;
     }
 }

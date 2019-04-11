@@ -9,6 +9,7 @@
         }
     },
     "require": {
+        "ext-json": "*",
         "guzzlehttp/guzzle": "^6.2"
     },
     "extra": {
