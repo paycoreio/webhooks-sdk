@@ -65,6 +65,9 @@ class ResponseWebhook
     /** @var null|string */
     public $commerce;
 
+    /** @var null|string */
+    public $operationStatus;
+
     /**
      * ResponseMessage constructor.
      *
